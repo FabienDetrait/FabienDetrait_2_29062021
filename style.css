@@ -1,11 +1,12 @@
-/* police */
+/*---------------------------- police + architecture -------------------------------------*/
 
 body {
     font-family: 'Raleway', sans-serif;
+    margin-left: 20px;
 }
 
 
-/* Les liens de navigation */
+/*------------------------- Les liens de navigation -----------------------*/
 
 #header {
     display: flex;
@@ -43,7 +44,7 @@ h1 {
 }
 
 
-/* Le Formulaire */
+/*------------------------- Le Formulaire ----------------------------*/
 
 #rechercher {
     display: flex;
@@ -81,7 +82,7 @@ h1 {
 }
 
 
-/* Les Filtres */
+/*--------------------- Les Filtres-------------------------- */
 
 .icône a, #filtres p {
     text-decoration: none;
@@ -118,7 +119,7 @@ h1 {
 }
 
 
-/*La Bulle info */
+/*-----------------------La Bulle info----------------------------*/
 
 #info {
     display: flex;
@@ -133,5 +134,84 @@ h1 {
     padding: 5px 10px 5px 10px;
     border-radius: 100px;
 }
+
+
+/*-------------------- Section Hébergements---------------------- */
+
+#hebergement img {
+    width: 200px;
+    height: 100px;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: -7px;
+}
+
+#hebergement {
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    width: 60%;
+    margin-top: 20px;
+}
+
+.carte_hebergement {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    width: 200px;
+    height: 175px;
+    padding: 2px;
+    margin-bottom: 20px;;
+}
+
+#hebergement_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 15px 0px 15px;
+}
+
+.carte_hebergement p, .stars {
+    line-height: 5px;
+    margin-left: 10px;
+}
+
+#hebergement h1 {
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+#hebergement a {
+    text-decoration: none;
+    color:black;
+}
+
+#afficher {
+    font-size: 0.7em;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.titre_image, .prix {
+    font-weight: bold;
+}
+
+#hebergement i {
+    font-size: 12px;
+    margin-right: -2px;
+}
+
+.blue {
+    color: #0065fc;
+}
+
+.empty {
+    color: #F2F2F2;
+}
+
+
+
+
+
+
 
 
