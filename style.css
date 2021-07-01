@@ -287,3 +287,47 @@ a {
     margin: 3px 30px 30px 30px;
     border-radius: 15px;
 }
+
+
+/*--------------------------- Activités -------------------------------*/
+
+#activites {
+    margin-top: 50px;
+}
+
+#activites_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#vieux_port img, #calanques img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+}
+
+#pomegues img, #longchamp img {
+    width:280px;
+    height: 140px;
+    object-fit: cover;
+}
+
+#frioul img, #garde img {
+    width: 280px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#activites img {
+    border-radius: 15px 15px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
