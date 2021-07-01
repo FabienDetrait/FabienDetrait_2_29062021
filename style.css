@@ -139,7 +139,7 @@ h1 {
 /*-------------------- Section Hébergements---------------------- */
 
 #hebergement img {
-    width: 200px;
+    width: 230px;
     height: 100px;
     border-radius: 15px 15px 0 0;
     margin-bottom: -7px;
@@ -149,7 +149,7 @@ h1 {
     border: 1px solid #F2F2F2;
     background-color: #F2F2F2;
     border-radius: 30px;
-    width: 60%;
+    width: 80%;
     margin-top: 20px;
 }
 
@@ -157,7 +157,7 @@ h1 {
     border: 1px solid white;
     background-color: white;
     border-radius: 15px;
-    width: 200px;
+    width: 230px;
     height: 175px;
     padding: 2px;
     margin-bottom: 20px;;
@@ -175,9 +175,11 @@ h1 {
     margin-left: 10px;
 }
 
-#hebergement h1 {
+#hebergement h2 {
     margin-left: 30px;
     font-weight: bold;
+    padding-top: 20px;
+    font-size: 1.2em;
 }
 
 #hebergement a {
@@ -186,7 +188,7 @@ h1 {
 }
 
 #afficher {
-    font-size: 0.7em;
+    font-size: 1.1em;
     font-weight: bold;
     margin-left: 30px;
 }
@@ -209,9 +211,79 @@ h1 {
 }
 
 
+/*-------------------- Aside Les plus populaires ---------------------- */
+
+#hebergement_populaire {
+    display: flex;
+}
+
+aside {
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    margin-left: 35px;
+    border-radius: 30px;
+    width: 35%;
+    margin-top: 20px;
+}
+
+#titre_pop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 
+aside h2 {
+    margin-left: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+    font-size: 1.2em;
+}
 
+#graph {
+    padding: 20px 30px 0 0;
+}
 
+aside img {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px 0 0 15px;
+}
 
+.carte_populaire {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.carte_populaire p {
+    color: black;
+}
+
+.descriptif {
+    margin-left: 15px;
+}
+
+.nuit {
+    font-size: 0.8em;
+}
+
+.descriptif .nuit {
+    margin-top: -10px;
+}
+
+.carte_populaire .stars {
+    font-size: 0.7em;
+    margin: 25px 0 0 0;
+}
+
+.populaire {
+    border: 1px solid white;
+    background-color: white;
+    padding: 2px;
+    margin: 3px 30px 30px 30px;
+    border-radius: 15px;
+}
