@@ -298,6 +298,13 @@ a {
 #activites_flex {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+}
+
+#pomegues_frioul, #garde_longchamp {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 #vieux_port img, #calanques img {
@@ -312,9 +319,9 @@ a {
     object-fit: cover;
 }
 
-#frioul img, #garde img {
+#frioul img {
     width: 280px;
-    height: 100px;
+    height: 110px;
     object-fit: cover;
 }
 
@@ -322,10 +329,28 @@ a {
     border-radius: 15px 15px 0 0;
 }
 
+#garde img {
+    width: 280px;
+    height: 120px;
+    object-fit: cover;
+}
 
+#vieux_port, #pomegues, #frioul, #calanques, #garde, #longchamp {
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #F2F2F2;
+}
 
+a {
+    text-decoration: none;
+    color: black;
+}
 
-
+#activites p {
+    margin-left: 15px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
 
 
 
