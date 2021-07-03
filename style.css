@@ -1,209 +1,40 @@
-/*---------------------------- police + architecture -------------------------------------*/
+/*------------------------------------- Architecture -------------------------------------*/
 
 body {
     font-family: 'Raleway', sans-serif;
     margin-left: 20px;
 }
 
-
-/*------------------------- Les liens de navigation -----------------------*/
-
-#header {
-    display: flex;
-    justify-content: space-between;
+a {
+    text-decoration: none;
+    color: black;
 }
 
-header nav ul {
-    display: flex;
+ul {
     list-style-type: none;
-}
-
-header nav a {
-    text-decoration: none;
-    margin: 0px 5px 0px 50px;
-    color: black;
-    border: 2px solid transparent;
-    padding: 1.4em;
-}
-
-header nav a:hover {
-    border-top: 2px solid #0065FC;
-    color: #0065FC;
-    padding-top: 1.4em;
-}
-
-#inscription {
-    font-weight: bold;
-    color: #0065FC;
-}
-
-
-h1 {
-    font-size: 1.2em;
-    margin-top: 50px;
-}
-
-
-/*------------------------- Le Formulaire ----------------------------*/
-
-#rechercher {
     display: flex;
-    margin-top: 20px;
 }
 
-#form {
-    display:flex;
-}
-
-#localisation {
-    background-color: #F2F2F2;
-    padding: 15px;
-    border-radius: 10px 0px 0px 10px;
-    border: 1px solid #F2F2F2;
-}
-
-#ville {
-    padding: 15px;
-    font-weight: bold;
-    color: black;
-    border: 1px solid #F2F2F2;
-}
-
-#ville::placeholder {
-    color: black;
-}
-
-#research {
-    background-color: #0065fc;
-    color: white;
-    border: 1px solid #0065fc;
-    padding: 15px;
-    border-radius: 0px 10px 10px 0px;
-}
-
-
-/*--------------------- Les Filtres-------------------------- */
-
-.icône a, #filtres p {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
-
-#filtres {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.icône {
-    margin-left: 30px;
-    border: 1px solid #F2F2F2;
-    border-radius: 40px;
-    padding-right: 10px;
-}
-
-.icône i {
-    padding: 10px;
-    color: #0065fc;
-    border: 1px solid #DEEBFF;
-    border-radius: 40px;
-    margin-right: 10px;
-    background-color: #DEEBFF;
-}
-
-.icône a:hover {
-    color: blue;
+h2 {
     font-size: 1.3em;
-    text-shadow: 2px 2px 4px black;
-}
-
-
-/*-----------------------La Bulle info----------------------------*/
-
-#info {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-
-#info i {
-    margin-right: 10px;
-    color: #0065fc;
-    border: 1px solid #F2F2F2;
-    padding: 5px 10px 5px 10px;
-    border-radius: 100px;
-}
-
-
-/*-------------------- Section Hébergements---------------------- */
-
-#hebergement img {
-    width: 230px;
-    height: 100px;
-    border-radius: 15px 15px 0 0;
-    margin-bottom: -7px;
-}
-
-#hebergement {
-    border: 1px solid #F2F2F2;
-    background-color: #F2F2F2;
-    border-radius: 30px;
-    width: 80%;
-    margin-top: 20px;
-}
-
-.carte_hebergement {
-    border: 1px solid white;
-    background-color: white;
-    border-radius: 15px;
-    width: 230px;
-    height: 175px;
-    padding: 2px;
-    margin-bottom: 20px;;
-}
-
-#hebergement_flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 15px 0px 15px;
-}
-
-.carte_hebergement p, .stars {
-    line-height: 5px;
-    margin-left: 10px;
-}
-
-#hebergement h2 {
-    margin-left: 30px;
     font-weight: bold;
-    padding-top: 20px;
-    font-size: 1.2em;
 }
 
-#hebergement a {
-    text-decoration: none;
-    color:black;
-}
-
-#afficher {
+h3 {
     font-size: 1.1em;
     font-weight: bold;
-    margin-left: 30px;
 }
 
-.titre_image, .prix {
+.prix {
     font-weight: bold;
 }
 
-#hebergement i {
-    font-size: 12px;
-    margin-right: -2px;
+.stars {
+    font-size: 0.7em;
 }
 
 .blue {
-    color: #0065fc;
+    color: #0065FC;
 }
 
 .empty {
@@ -211,81 +42,205 @@ h1 {
 }
 
 
-/*-------------------- Aside Les plus populaires ---------------------- */
+/*--------------------------------------- Header ----------------------------------------*/
 
-#hebergement_populaire {
+    /*----- La navigation -----*/
+
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#inscription {
+    font-weight: bold;
+    color: #0065FC;
+}
+
+#header nav a {
+    margin: 0 5px 0 50px;
+    padding: 22px;
+}
+
+#header nav a:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+
+    /*----- Le Formulaire -----*/
+
+#rechercher {
+    display: flex;
+    margin-top: 20px;
+}
+
+#form {
     display: flex;
 }
 
-aside {
+#localisation {
     border: 1px solid #F2F2F2;
     background-color: #F2F2F2;
-    margin-left: 35px;
-    border-radius: 30px;
-    width: 35%;
-    margin-top: 20px;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+}
+
+#ville::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+#research {
+    background-color: #0065fc;
+    color: white;
+    border: 1px solid #0065fc;
+    border-radius: 0 10px 10px 0;
+}
+
+
+    /*----- Les Filtres -----*/
+
+#filtres {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+    border-radius: 100px;
+    padding: 18px 15px 18px 0;
+    height: 0;
+}
+
+.icones i {
+    color: #0065fc;
+    border: 1px solid #DEEBFF;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #DEEBFF;
+    border-radius: 100px;
+}
+
+.icone a:hover {
+    text-shadow: 2px 2px 5px grey;
+}
+
+
+    /*----- La Bulle info -----*/
+
+#info {
+    display: flex;
+    align-items: center;
+}
+
+#info i {
+    color: #0065fc;
+    margin-right: 15px;
+    border: 1px solid #F2F2F2;
+    padding: 5px 10px 5px 10px;
+    border-radius: 100px;
+}
+
+
+/*---------------------------------- Section Hébergement -----------------------------------*/
+
+#section_hebergement {
+    margin-top: 30px;
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    width: 60%;
+    padding: 0 20px 10px 20px;
+}
+
+#hebergement {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#hebergement img {
+    width: 220px;
+    height: 100px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+#hebergement .titre_image, #hebergement .nuit, #hebergement .stars {
+    line-height: 1px;
+    margin-left: 10px;
+}
+
+#hebergement .titre_image {
+    margin-top: 10px;
+}
+
+.descriptif_hebergement {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2px 2px 10px 2px;
+    margin-bottom: 20px;
+}
+
+.descriptif_hebergement:hover {
+    box-shadow: 5px 5px 5px red;
+}
+
+
+/*---------------------------------- Aside Les plus populaires -----------------------------------*/
+
+main {
+    display: flex;
+    justify-content: space-between;
 }
 
 #titre_pop {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
-
-
-aside h2 {
-    margin-left: 30px;
-    font-weight: bold;
-    padding-top: 20px;
-    font-size: 1.2em;
+aside {
+    margin-top: 30px;
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    width: 30%;
+    padding: 0 20px 10px 20px;
 }
 
-#graph {
-    padding: 20px 30px 0 0;
-}
-
-aside img {
-    width: 120px;
-    height: 120px;
+.populaire img {
+    width: 130px;
+    height: 130px;
     border-radius: 15px 0 0 15px;
+    object-fit: cover;
 }
 
-.carte_populaire {
+.photo_populaire {
     display: flex;
 }
 
-a {
-    text-decoration: none;
-}
-
-.carte_populaire p {
-    color: black;
-}
-
-.descriptif {
-    margin-left: 15px;
-}
-
-.nuit {
-    font-size: 0.8em;
-}
-
-.descriptif .nuit {
-    margin-top: -10px;
-}
-
-.carte_populaire .stars {
-    font-size: 0.7em;
-    margin: 25px 0 0 0;
-}
-
-.populaire {
+.carte_populaire {
     border: 1px solid white;
     background-color: white;
-    padding: 2px;
-    margin: 3px 30px 30px 30px;
     border-radius: 15px;
+    padding: 2px 10px 2px 2px;
+    margin-bottom: 20px;
+}
+
+.populaire .titre_image, .populaire .nuit, .populaire .stars {
+    margin-left: 20px;
+}
+
+.populaire .nuit {
+    margin-top: -20px;
+    margin-bottom: 30px;
 }
 
 
