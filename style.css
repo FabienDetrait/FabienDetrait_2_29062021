@@ -41,7 +41,7 @@ h3 {
 
     /*----- La navigation -----*/
 
-#header {
+.header {
     display: flex;
     justify-content: space-between;
 }
@@ -56,20 +56,21 @@ header ul {
     color: #0065FC;
 }
 
-#header nav a {
-    margin: 0 5px 0 50px;
-    padding: 14px;
-}
 
-#header nav a:hover {
+
+.header nav a:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
 }
 
+.header nav a {
+    margin: 0 5px 0 50px;
+    padding: 14px;
+}
 
     /*----- Le Formulaire -----*/
 
-#rechercher {
+.rechercher {
     display: flex;
     margin-top: 20px;
 }
@@ -100,7 +101,7 @@ header ul {
 
     /*----- Les Filtres -----*/
 
-#filtres {
+.filtres {
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
@@ -134,12 +135,12 @@ header ul {
 
     /*----- La Bulle info -----*/
 
-#info {
+.info {
     display: flex;
     align-items: center;
 }
 
-#info i {
+.info i {
     color: #0065fc;
     margin-right: 15px;
     border: 1px solid #F2F2F2;
@@ -159,25 +160,25 @@ header ul {
     padding: 0 20px 10px 20px;
 }
 
-#hebergement {
+.hebergement {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#hebergement img {
+.hebergement img {
     width: 220px;
     height: 100px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
 
-#hebergement .titre_image, #hebergement .nuit, #hebergement .stars {
+.hebergement .titre_image, .hebergement .nuit, .hebergement .stars {
     line-height: 1px;
     margin-left: 10px;
 }
 
-#hebergement .titre_image {
+.hebergement .titre_image {
     margin-top: 10px;
 }
 
@@ -201,7 +202,7 @@ main {
     justify-content: space-between;
 }
 
-#titre_pop {
+.titre_pop {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -319,15 +320,68 @@ footer ul {
 .propos  {
     margin-left: 50px; 
     line-height: 2em;
- }
+}
  
- .nos_hebergements, .assistance {
+.nos_hebergements, .assistance {
     margin-left: 220px; 
     line-height: 2em;
- } 
+} 
  
 footer a:hover {
     text-shadow: 2px 2px 5px grey;
     color: #0065fc;
 }
 
+
+/*-------------------------------- Media Queries ------------------------------------*/
+
+    /* écran 1200px et plus */
+
+@media (min-width: 1200px) {
+    body {
+        max-width: 1200px;
+        margin: auto;
+      }
+    }
+
+    
+    /* tablette 768px et plus*/
+
+@media all and (min-width: 768px) and (max-width: 1199px) {
+    
+    .icones {
+        margin-left: 6px;   
+    }
+    
+    main {
+        flex-direction: column;
+    }
+     
+    #section_hebergement, aside {
+        width: 95%;
+        flex-wrap: wrap;
+    }
+
+    .activites {
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    footer {
+        width: 100%;
+        margin: 40px 0 0 0;
+    }
+
+    .nos_hebergements, .assistance {
+        margin-left: 50px;
+    } 
+        
+        
+    
+
+
+
+
+
+}
