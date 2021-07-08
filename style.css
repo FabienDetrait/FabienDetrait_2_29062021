@@ -2,7 +2,8 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    margin: 0px 20px 0 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 a {
@@ -55,8 +56,6 @@ header ul {
     font-weight: bold;
     color: #0065FC;
 }
-
-
 
 .header nav a:hover {
     border-top: 2px solid #0065FC;
@@ -335,53 +334,76 @@ footer a:hover {
 
 /*-------------------------------- Media Queries ------------------------------------*/
 
-    /* écran 1200px et plus */
+    /*----- Écran entre 992px et 1199px -----*/
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+
     body {
-        max-width: 1200px;
+        width: 97%;
         margin: auto;
-      }
     }
 
-    
-    /* tablette 768px et plus*/
+    .filtres {
+        width: 85%;
+    }
 
-@media all and (min-width: 768px) and (max-width: 1199px) {
-    
-    .icones {
-        margin-left: 6px;   
+    #section_hebergement {
+        width: 55%;
     }
-    
-    main {
-        flex-direction: column;
+
+    aside {
+        width: 35%;
     }
-     
-    #section_hebergement, aside {
-        width: 95%;
-        flex-wrap: wrap;
+
+    .photo_populaire h4 br {
+        display:none;
+    }
+
+    .activites img {
+        width: 30vw;
+        height: 150px;
     }
 
     .activites {
-        width: 95%;
+        height: 450px;
         flex-wrap: wrap;
         justify-content: space-around;
+        align-content: space-between;
     }
 
-    footer {
-        width: 100%;
-        margin: 40px 0 0 0;
+    .pomegues_frioul, .garde_longchamp {
+        width: 65%;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    .nos_hebergements, .assistance {
-        margin-left: 50px;
-    } 
-        
-        
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 }
+
+
+
+
+
+
+
+
+
