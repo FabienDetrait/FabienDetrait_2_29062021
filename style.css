@@ -377,33 +377,80 @@ footer a:hover {
         justify-content: space-between;
     }
 
+    footer {
+        margin: 20px 0 0 0;
+        justify-content: space-around;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .nos_hebergements, .assistance {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
+    /*----- Écran entre 768px et 991px -----*/
 
+@media (min-width: 768px) and (max-width: 991px) {
 
+    body {
+        width: 97%;
+        margin: auto;
+    }
 
+    .filtres {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    .icones {
+        margin-bottom: 10px;
+    }
 
+    main {
+        flex-direction: column;
+    }
 
+    #section_hebergement, aside {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    
+    .descriptif_hebergement img {
+        width: 40vw;
+        height: 150px;
+    }
 
+    .photo_populaire h4 br {
+        display:none;
+    }
+
+    .activites img {
+        width: 30vw;
+        height: 150px;
+    }
+
+    .activites {
+        height: 450px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-between;
+    }
+
+    .pomegues_frioul, .garde_longchamp {
+        width: 65%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer {
+        margin: 20px 0 0 0;
+        justify-content: space-around;
+    }
+
+    .nos_hebergements, .assistance {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
