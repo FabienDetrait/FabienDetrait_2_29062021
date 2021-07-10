@@ -11,6 +11,11 @@ a {
     color: black;
 }
 
+
+ul {
+    list-style-type: none;
+}
+
 h2 {
     font-size: 1.3em;
     font-weight: bold;
@@ -20,6 +25,7 @@ h3 {
     font-size: 1.1em;
     font-weight: bold;
 }
+
 
 .prix {
     font-weight: bold;
@@ -45,27 +51,36 @@ h3 {
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-header ul {
-    list-style-type: none;
+.nav_menu {
+    display: flex;
+    align-items: baseline;
+}
+
+.header nav ul {
     display: flex;
 }
 
-#inscription {
-    font-weight: bold;
-    color: #0065FC;
-}
-
-.header nav a:hover {
-    border-top: 2px solid #0065FC;
-    color: #0065FC;
-}
-
-.header nav a {
-    margin: 0 5px 0 50px;
+.nav {
+    margin-right: 20px;
+    border: 2px solid transparent;
     padding: 14px;
 }
+
+.inscription {
+    font-weight: bold;
+    color: #0065fc;
+    border: 2px solid transparent;
+    padding: 14px;
+}
+
+.header a:hover {
+    color: #0065fc;
+    border-top-color: #0065fc; 
+}
+
 
     /*----- Le Formulaire -----*/
 
@@ -522,5 +537,46 @@ footer a:hover {
 
     .nos_hebergements, .assistance {
         margin-left: 50px;
+    }
+}
+
+
+    /*----- Écran moins de 575px -----*/
+
+@media (max-width: 575px) {
+
+    body {
+        width: 97%;
+        margin: auto;
+    }
+
+   .nav_menu {
+        flex-direction: column-reverse;     /* inversion inscription avec hébergement et activités */
+        align-items: flex-end;              /* placés à droite */
+        width: 100%;
+    }
+
+   .header {
+        align-items: stretch;               /* remonter le logo en haut à gauche */
+    }
+
+    .logo {
+        position: absolute;                 /* pour pouvoir ensuite contrôler la largeur des 2 div children */
+    }
+
+    .header nav {
+        border-bottom: 2px solid #F2F2F2;
+        width: 100%;
+    }   
+
+    .header nav ul{
+        justify-content: space-between;
+        padding-left: 2px;
+    }   
+    
+    .nav:hover {
+        border-top: none;
+        padding-bottom: 17px;
+        border-bottom-color: #0065fc;
     }
 }
