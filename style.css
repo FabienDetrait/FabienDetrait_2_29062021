@@ -349,9 +349,9 @@ footer a:hover {
 
 /*-------------------------------- Media Queries ------------------------------------*/
 
-    /*----- Écran entre 992px et 1199px -----*/
+    /*----- Écran max 1199px -----*/
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
 
     body {
         width: 97%;
@@ -359,7 +359,7 @@ footer a:hover {
     }
 
     .filtres {
-        width: 85%;
+        width: 85%;                     /* les filtres seront espacés (car largeur plus grande) */ 
     }
 
     #section_hebergement {
@@ -370,213 +370,226 @@ footer a:hover {
         width: 35%;
     }
 
-    .photo_populaire h4 br {
-        display:none;
-    }
-
-    .activites img {
-        width: 30vw;
-        height: 150px;
-    }
-
     .activites {
-        height: 450px;
-        flex-wrap: wrap;
+        flex-wrap: wrap;                   
         justify-content: space-around;
-        align-content: space-between;
+        height: 450px;                     /* augmentation de la hauteur pour éviter que les éléments soient collés verticalement */
+        align-content: space-between;      /* puis les espacés un peu plus */
     }
 
     .pomegues_frioul, .garde_longchamp {
-        width: 65%;
         flex-direction: row;
+        width: 65%;                        /* augmentation de la largeur pour éviter que les éléments soient collés horizontalement */
         justify-content: space-between;
     }
 
+    .activites img {
+        width: 30vw;                        /* images Activités occuperont toujours 30% en largeur de la section */
+        height: 150px;
+    }
+    
     footer {
-        margin: 20px 0 0 0;
-        justify-content: space-around;
+        margin: 20px 0 0 0;                 /* améliorer le footer (moins de débordement côté et plus espacé en haut) */
     }
 
     .nos_hebergements, .assistance {
-        margin-left: auto;
+        margin-left: auto;                  /* "recenter" les 2 éléments */
         margin-right: auto;
     }
 }
 
 
-    /*----- Écran entre 768px et 991px -----*/
+    /*----- Écran max 991px -----*/
 
-@media (min-width: 768px) and (max-width: 991px) {
-
-    body {
-        width: 97%;
-        margin: auto;
-    }
+@media (max-width: 991px) {
 
     .filtres {
-        flex-direction: column;
+        flex-direction: column;             /* aligner verticalement les filtres */
         align-items: flex-start;
     }
 
     .icones {
-        margin-bottom: 10px;
+        margin-bottom: 10px;                /* espacer verticalement les filtres */
     }
 
     main {
-        flex-direction: column;
+        flex-direction: column;             /* section Hébergement et Aside alignés verticalement */
     }
 
     #section_hebergement, aside {
-        width: 90%;
+        width: 90%;                         /* section hébergement et Aside largeur de 90% de l'écran + marge auto pour les centrer + augmenterespace bas */
         margin: auto;
         margin-bottom: 15px;
     }
-    
+
     .descriptif_hebergement img {
-        width: 40vw;
+        width: 40vw;                        /* images section hébergement occuperont toujours 40% en largeur de la section */
         height: 150px;
     }
 
     .photo_populaire h4 br {
-        display:none;
-    }
-
-    .activites img {
-        width: 30vw;
-        height: 150px;
-    }
-
-    .activites {
-        height: 450px;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-content: space-between;
-    }
-
-    .pomegues_frioul, .garde_longchamp {
-        width: 65%;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    footer {
-        margin: 20px 0 0 0;
-        justify-content: space-around;
-    }
-
-    .nos_hebergements, .assistance {
-        margin-left: auto;
-        margin-right: auto;
+        display:none;                       /* supprimer le renvoi à la ligne */
     }
 }
 
-    /*----- Écran entre 576px et 767px -----*/
 
-@media (min-width: 576px) and (max-width: 767px) {
+    /*----- Écran max 767px -----*/
 
-    body {
-        width: 97%;
-        margin: auto;
-    }
-
-    .filtres {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .icones {
-        margin-bottom: 10px;
-    }
-
-    main {
-        flex-direction: column;
-    }
+@media (max-width: 767px) {
 
     aside {
-        order: 1;
+        order: 1;                           /* aside vient avant section Hébergement */
     }
 
     #section_hebergement {
-        order: 2;
-    }
-
-    #section_hebergement, aside {
-        width: 90%;
-        margin: auto;
-        margin-bottom: 15px;
-    }
-    
-    .descriptif_hebergement img {
-        width: 40vw;
-        height: 150px;
-    }
-
-    .photo_populaire h4 br {
-        display:none;
-    }
-
-    .activites img {
-        width: 100%;
-        height: 150px;
+        order: 2;                           /* Section Hébergement vient après aside */
     }
 
     .activites {
-        width: 97%;
+        flex-wrap: nowrap;                  /* annuler renvoi à la ligne */              
+        flex-direction: column;             /* les aligner verticalement */
+        height: auto;                       /* hauteur auto pour qu'ils soient bien répartis verticalement (annuler le 450px précédent) */
+        width: 97%;                         
         margin: auto;
-        flex-direction: column;
     }
 
-    .activites div {
-        margin-bottom: 10px;
+    .pomegues_frioul, .garde_longchamp {
+        flex-direction: column;             /* les aligner verticalement */
+        width: auto;                        /* remettre la largeur de même taille que Activités (annuler celle à 65% des écrans plus grands */
     }
 
-    footer {
-        margin: 20px 0 0 0; 
-        flex-direction: column;
+    .activites img {
+        width: 100%;                        /* images occupent 100% de la largeur d'activités */
+        height: 150px;
+    }
+    
+    .grande_photo, .grand_cadre, .petit_cadre, .moyen_cadre {
+        margin-bottom: 15px;
     }
 
-    .nos_hebergements, .assistance {
-        margin-left: 50px;
+   footer {
+       flex-direction: column;
+   }
+
+   .nos_hebergements, .assistance {
+    margin-left: 50px;                      /* même marge que Propos pour qu'ils soient tous alignés */
     }
 }
 
 
-    /*----- Écran moins de 575px -----*/
+    /*----- Écran max 575px -----*/
 
 @media (max-width: 575px) {
 
-    body {
-        width: 97%;
-        margin: auto;
-    }
 
-   .nav_menu {
-        flex-direction: column-reverse;     /* inversion inscription avec hébergement et activités */
-        align-items: flex-end;              /* placés à droite */
-        width: 100%;
-    }
 
-   .header {
-        align-items: stretch;               /* remonter le logo en haut à gauche */
-    }
 
-    .logo {
-        position: absolute;                 /* pour pouvoir ensuite contrôler la largeur des 2 div children */
-    }
 
-    .header nav {
-        border-bottom: 2px solid #F2F2F2;
-        width: 100%;
-    }   
 
-    .header nav ul{
-        justify-content: space-between;
-        padding-left: 2px;
-    }   
     
-    .nav:hover {
-        border-top: none;
-        padding-bottom: 17px;
-        border-bottom-color: #0065fc;
-    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
