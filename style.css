@@ -112,6 +112,15 @@ h3 {
     border-radius: 0 10px 10px 0;
 }
 
+#loupe {
+    background-color: #0065fc;
+    color: white;
+    border: 1px solid #0065fc;
+    padding: 0 10px 0 10px;
+    border-radius: 10px;
+    display: none;
+}
+
 
     /*----- Les Filtres -----*/
 
@@ -544,7 +553,21 @@ footer a:hover {
         margin-top: 5px;
     }
 
-    .populaire .nuit, .populaire .stars {
-        line height: 10px;
+    #research {
+        display: none;                          /* Faire disparaître le bouton rechercher */                     
+    }
+
+    #loupe {
+        display: block;                         /* Faire apparaître le bouton loupe */
+    }
+
+    #ville {
+        border-color: transparent;
+    }
+
+    #form {
+        border: 1px solid #F2F2F2;              
+        border-right: transparent;
+        border-radius: 0 10px 10px 0;
     }
 }
