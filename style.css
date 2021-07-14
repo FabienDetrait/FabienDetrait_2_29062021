@@ -1,583 +1,582 @@
 /*------------------------------------- Architecture -------------------------------------*/
 
 body {
-    font-family: 'Raleway', sans-serif;
-    max-width: 1200px;
-    margin: auto;
+  font-family: "Raleway", sans-serif;
+  max-width: 1200px;
+  margin: auto;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 h2 {
-    font-size: 1.3em;
-    font-weight: bold;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 h3 {
-    font-size: 1.1em;
-    font-weight: bold;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 .prix {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .stars {
-    font-size: 0.7em;
+  font-size: 0.7em;
 }
 
 .blue {
-    color: #0065FC;
+  color: #0065fc;
 }
 
 .empty {
-    color: #F2F2F2;
+  color: #f2f2f2;
 }
-
 
 /*--------------------------------------- Header ----------------------------------------*/
 
-    /*----- La navigation -----*/
+/*----- La navigation -----*/
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav_menu {
-    display: flex;
-    align-items: baseline;
+  display: flex;
+  align-items: baseline;
 }
 
 .header nav ul {
-    display: flex;
+  display: flex;
 }
 
 .nav {
-    margin-right: 20px;
-    border: 2px solid transparent;
-    padding: 14px;
+  margin-right: 20px;
+  border: 2px solid transparent;
+  padding: 14px;
 }
 
 .inscription {
-    font-weight: bold;
-    color: #0065fc;
-    border: 2px solid transparent;
-    padding: 14px;
+  font-weight: bold;
+  color: #0065fc;
+  border: 2px solid transparent;
+  padding: 14px;
 }
 
 .header a:hover {
-    color: #0065fc;
-    border-top-color: #0065fc; 
+  color: #0065fc;
+  border-top-color: #0065fc;
 }
 
-
-    /*----- Le Formulaire -----*/
+/*----- Le Formulaire -----*/
 
 .rechercher {
-    display: flex;
-    margin-top: 20px;
+  display: flex;
+  margin-top: 20px;
 }
 
 #form {
-    display: flex;
+  display: flex;
 }
 
 #localisation {
-    border: 1px solid #F2F2F2;
-    background-color: #F2F2F2;
-    border-radius: 10px 0 0 10px;
-    padding: 10px;
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+  border-radius: 10px 0 0 10px;
+  padding: 10px;
 }
 
 #ville::placeholder {
-    color: black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
 
 #research {
-    background-color: #0065fc;
-    color: white;
-    border: 1px solid #0065fc;
-    border-radius: 0 10px 10px 0;
+  background-color: #0065fc;
+  color: white;
+  border: 1px solid #0065fc;
+  border-radius: 0 10px 10px 0;
 }
 
 #research:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #loupe {
-    background-color: #0065fc;
-    color: white;
-    border: 1px solid #0065fc;
-    padding: 0 10px 0 10px;
-    border-radius: 10px;
-    display: none;
+  background-color: #0065fc;
+  color: white;
+  border: 1px solid #0065fc;
+  padding: 0 10px 0 10px;
+  border-radius: 10px;
+  display: none;
 }
 
-
-    /*----- Les Filtres -----*/
+/*----- Les Filtres -----*/
 
 .filtres {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .les_filtres {
-    display: flex;
+  display: flex;
 }
 
 .filtres h3:first-child {
-    margin-right: 15px;                     /* Seul le 1er h3 dans la class filtres aura une marge de 15px */
+  margin-right: 15px; /* Seul le 1er h3 dans la class filtres aura une marge de 15px */
 }
 
 .icones {
-    display: flex;
-    align-items: center;
-    border: 1px solid #F2F2F2;
-    border-radius: 100px;
-    height: 40px;
-    padding-right: 15px;
-    margin-right: 15px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  border-radius: 100px;
+  height: 40px;
+  padding-right: 15px;
+  margin-right: 15px;
 }
 
 .icones i {
-    color: #0065fc;
-    border: 1px solid #DEEBFF;
-    background-color: #DEEBFF;
-    border-radius: 100px;
-    width: 40px;
-    height: 40px;
-    display: flex;                            /* pour pouvoir recentrer ensuite car modif avec height et width */
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
+  color: #0065fc;
+  border: 1px solid #deebff;
+  background-color: #deebff;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  display: flex; /* pour pouvoir recentrer ensuite car modif avec height et width */
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
 }
 
 .icone a:hover {
-    text-shadow: 2px 2px 5px grey;
-    color: #0065fc;
+  text-shadow: 2px 2px 5px grey;
+  color: #0065fc;
 }
 
-
-    /*----- La Bulle info -----*/
+/*----- La Bulle info -----*/
 
 .info {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .info i {
-    color: #0065fc;
-    margin-right: 15px;
-    border: 1px solid #F2F2F2;
-    padding: 5px 10px 5px 10px;
-    border-radius: 100px;
+  color: #0065fc;
+  margin-right: 15px;
+  border: 1px solid #f2f2f2;
+  padding: 5px 10px 5px 10px;
+  border-radius: 100px;
 }
-
 
 /*---------------------------------- Section Hébergement -----------------------------------*/
 
 #section_hebergement {
-    margin-top: 30px;
-    border: 1px solid #F2F2F2;
-    background-color: #F2F2F2;
-    border-radius: 15px;
-    width: 60%;
-    padding: 0 20px 10px 20px;
+  margin-top: 30px;
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  width: 60%;
+  padding: 0 20px 10px 20px;
 }
 
 .hebergement {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .hebergement img {
-    width: 220px;
-    height: 100px;
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
+  width: 220px;
+  height: 100px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
 }
 
-.hebergement .titre_image, .hebergement .nuit, .hebergement .stars {
-    line-height: 1px;
-    margin-left: 10px;
+.hebergement .titre_image,
+.hebergement .nuit,
+.hebergement .stars {
+  line-height: 1px;
+  margin-left: 10px;
 }
 
 .hebergement .titre_image {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .descriptif_hebergement {
-    border: 1px solid white;
-    background-color: white;
-    border-radius: 15px;
-    padding: 2px 2px 10px 2px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px #b4b3b3;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 15px;
+  padding: 2px 2px 10px 2px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #b4b3b3;
 }
 
 .descriptif_hebergement:hover {
-    box-shadow: 5px 5px 5px #0065FC;
+  box-shadow: 5px 5px 5px #0065fc;
 }
-
 
 /*---------------------------------- Aside Les plus populaires -----------------------------------*/
 
 main {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .titre_pop {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 aside {
-    margin-top: 30px;
-    border: 1px solid #F2F2F2;
-    background-color: #F2F2F2;
-    border-radius: 15px;
-    width: 30%;
-    padding: 0 20px 10px 20px;
+  margin-top: 30px;
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  width: 30%;
+  padding: 0 20px 10px 20px;
 }
 
 .populaire img {
-    width: 130px;
-    height: 130px;
-    border-radius: 15px 0 0 15px;
-    object-fit: cover;
+  width: 130px;
+  height: 130px;
+  border-radius: 15px 0 0 15px;
+  object-fit: cover;
 }
 
 .photo_populaire {
-    display: flex;
-    border: 1px solid white;
-    background-color: white;
-    border-radius: 15px;
-    padding: 2px 10px 2px 2px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px #b4b3b3;
+  display: flex;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 15px;
+  padding: 2px 10px 2px 2px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #b4b3b3;
 }
 
 .photo_populaire:hover {
-    box-shadow: 5px 5px 5px #0065FC;  
+  box-shadow: 5px 5px 5px #0065fc;
 }
 
-.populaire .titre_image, .populaire .nuit, .populaire .stars {
-    margin-left: 20px;
+.populaire .titre_image,
+.populaire .nuit,
+.populaire .stars {
+  margin-left: 20px;
 }
 
 .populaire .nuit {
-    margin-top: -20px;
-    margin-bottom: 30px;
+  margin-top: -20px;
+  margin-bottom: 30px;
 }
-
 
 /*--------------------------- Activités -------------------------------*/
 
 .section_activites {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .activites {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-.pomegues_frioul, .garde_longchamp {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.pomegues_frioul,
+.garde_longchamp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .activites img {
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
 }
 
 .grande_photo img {
-    width: 270px;
-    height: 400px;
+  width: 270px;
+  height: 400px;
 }
 
 .grand_cadre img {
-    width: 270px;
-    height: 160px;
+  width: 270px;
+  height: 160px;
 }
 
 .moyen_cadre img {
-    width: 270px;
-    height: 140px;
+  width: 270px;
+  height: 140px;
 }
 
 .petit_cadre img {
-    width: 270px;
-    height: 120px;
+  width: 270px;
+  height: 120px;
 }
 
-.grande_photo, .grand_cadre, .moyen_cadre, .petit_cadre {
-    border: 1px solid #F2F2F2;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px #F2F2F2;
+.grande_photo,
+.grand_cadre,
+.moyen_cadre,
+.petit_cadre {
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #f2f2f2;
 }
 
 .activites h4 {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .activites a div:hover {
-    box-shadow: 5px 5px 5px #0065FC;  
+  box-shadow: 5px 5px 5px #0065fc;
 }
-
 
 /*-------------------------------- Footer ------------------------------------*/
 
-
 footer {
-    margin: 40px -20px 0 -20px;
-    background-color: #F2F2F2;
-    display: flex;  
+  margin: 40px -20px 0 -20px;
+  background-color: #f2f2f2;
+  display: flex;
 }
 
 footer ul {
-    list-style-type: none;
-    padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
-.propos  {
-    margin-left: 50px; 
-    line-height: 2em;
+.propos {
+  margin-left: 50px;
+  line-height: 2em;
 }
- 
-.nos_hebergements, .assistance {
-    margin-left: 220px; 
-    line-height: 2em;
-} 
- 
+
+.nos_hebergements,
+.assistance {
+  margin-left: 220px;
+  line-height: 2em;
+}
+
 footer a:hover {
-    text-shadow: 2px 2px 5px grey;
-    color: #0065fc;
+  text-shadow: 2px 2px 5px grey;
+  color: #0065fc;
 }
-
 
 /*-------------------------------- Media Queries ------------------------------------*/
 
-    /*----- Écran max 1199px -----*/
+/*----- Écran max 1199px -----*/
 
 @media (max-width: 1199px) {
+  body {
+    width: 97%;
+    margin: auto;
+  }
 
-    body {
-        width: 97%;
-        margin: auto;
-    }
+  #section_hebergement {
+    width: 55%;
+  }
 
-    #section_hebergement {
-        width: 55%;
-    }
+  aside {
+    width: 35%;
+    height: 520px;
+  }
 
-    aside {
-        width: 35%;
-        height: 520px;
-    }
+  .activites {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 450px; /* augmentation de la hauteur pour éviter que les éléments soient collés verticalement */
+    align-content: space-between; /* puis les espacés un peu plus */
+  }
 
-    .activites {
-        flex-wrap: wrap;                   
-        justify-content: space-around;
-        height: 450px;                     /* augmentation de la hauteur pour éviter que les éléments soient collés verticalement */
-        align-content: space-between;      /* puis les espacés un peu plus */
-    }
+  .pomegues_frioul,
+  .garde_longchamp {
+    flex-direction: row;
+    width: 65%; /* augmentation de la largeur pour éviter que les éléments soient collés horizontalement */
+    justify-content: space-between;
+  }
 
-    .pomegues_frioul, .garde_longchamp {
-        flex-direction: row;
-        width: 65%;                        /* augmentation de la largeur pour éviter que les éléments soient collés horizontalement */
-        justify-content: space-between;
-    }
+  .activites img {
+    width: 30vw; /* images Activités occuperont toujours 30% en largeur de la section */
+    height: 150px;
+  }
 
-    .activites img {
-        width: 30vw;                        /* images Activités occuperont toujours 30% en largeur de la section */
-        height: 150px;
-    }
-    
-    footer {
-        margin: 20px 0 0 0;                 /* améliorer le footer (moins de débordement côté et plus espacé en haut) */
-    }
+  footer {
+    margin: 20px 0 0 0; /* améliorer le footer (moins de débordement côté et plus espacé en haut) */
+  }
 
-    .nos_hebergements, .assistance {
-        margin-left: auto;                  /* "recenter" les 2 éléments */
-        margin-right: auto;
-    }
+  .nos_hebergements,
+  .assistance {
+    margin-left: auto; /* "recenter" les 2 éléments */
+    margin-right: auto;
+  }
 }
 
-
-    /*----- Écran max 991px -----*/
+/*----- Écran max 991px -----*/
 
 @media (max-width: 991px) {
+  .filtres {
+    flex-direction: column; /* aligner verticalement les filtres */
+    align-items: flex-start;
+  }
 
-    .filtres {
-        flex-direction: column;             /* aligner verticalement les filtres */
-        align-items: flex-start;
-    }
+  .les_filtres {
+    flex-wrap: wrap;
+  }
 
-    .les_filtres {
-        flex-wrap: wrap;
-    }
+  .icones {
+    margin-bottom: 10px; /* espacer verticalement les filtres */
+  }
 
-    .icones {
-        margin-bottom: 10px;                /* espacer verticalement les filtres */
-    }
+  main {
+    flex-direction: column; /* section Hébergement et Aside alignés verticalement */
+  }
 
-    main {
-        flex-direction: column;             /* section Hébergement et Aside alignés verticalement */
-    }
+  #section_hebergement,
+  aside {
+    width: 90%; /* section hébergement et Aside largeur de 90% de l'écran + marge auto pour les centrer + augmenterespace bas */
+    margin: auto;
+    margin-bottom: 15px;
+  }
 
-    #section_hebergement, aside {
-        width: 90%;                         /* section hébergement et Aside largeur de 90% de l'écran + marge auto pour les centrer + augmenterespace bas */
-        margin: auto;
-        margin-bottom: 15px;
-    }
+  .descriptif_hebergement img {
+    width: 40vw; /* images section hébergement occuperont toujours 40% en largeur de la section */
+    height: 150px;
+  }
 
-    .descriptif_hebergement img {
-        width: 40vw;                        /* images section hébergement occuperont toujours 40% en largeur de la section */
-        height: 150px;
-    }
-
-    .photo_populaire h4 br {
-        display:none;                       /* supprimer le renvoi à la ligne */
-    }
+  .photo_populaire h4 br {
+    display: none; /* supprimer le renvoi à la ligne */
+  }
 }
 
-
-    /*----- Écran max 767px -----*/
+/*----- Écran max 767px -----*/
 
 @media (max-width: 767px) {
+  aside {
+    order: 1; /* aside vient avant section Hébergement */
+  }
 
-    aside {
-        order: 1;                           /* aside vient avant section Hébergement */
-    }
+  #section_hebergement {
+    order: 2; /* Section Hébergement vient après aside */
+  }
 
-    #section_hebergement {
-        order: 2;                           /* Section Hébergement vient après aside */
-    }
+  .activites {
+    flex-wrap: nowrap; /* annuler renvoi à la ligne */
+    flex-direction: column; /* les aligner verticalement */
+    height: auto; /* hauteur auto pour qu'ils soient bien répartis verticalement (annuler le 450px précédent) */
+    width: 97%;
+    margin: auto;
+  }
 
-    .activites {
-        flex-wrap: nowrap;                  /* annuler renvoi à la ligne */              
-        flex-direction: column;             /* les aligner verticalement */
-        height: auto;                       /* hauteur auto pour qu'ils soient bien répartis verticalement (annuler le 450px précédent) */
-        width: 97%;                         
-        margin: auto;
-    }
+  .pomegues_frioul,
+  .garde_longchamp {
+    flex-direction: column; /* les aligner verticalement */
+    width: auto; /* remettre la largeur de même taille que Activités (annuler celle à 65% des écrans plus grands */
+  }
 
-    .pomegues_frioul, .garde_longchamp {
-        flex-direction: column;             /* les aligner verticalement */
-        width: auto;                        /* remettre la largeur de même taille que Activités (annuler celle à 65% des écrans plus grands */
-    }
+  .activites img {
+    width: 100%; /* images occupent 100% de la largeur d'activités */
+    height: 150px;
+  }
 
-    .activites img {
-        width: 100%;                        /* images occupent 100% de la largeur d'activités */
-        height: 150px;
-    }
-    
-    .grande_photo, .grand_cadre, .petit_cadre, .moyen_cadre {
-        margin-bottom: 15px;
-    }
+  .grande_photo,
+  .grand_cadre,
+  .petit_cadre,
+  .moyen_cadre {
+    margin-bottom: 15px;
+  }
 
-   footer {
-       flex-direction: column;
-   }
+  footer {
+    flex-direction: column;
+  }
 
-   .nos_hebergements, .assistance {
-    margin-left: 50px;                      /* même marge que Propos pour qu'ils soient tous alignés */
-    }
+  .nos_hebergements,
+  .assistance {
+    margin-left: 50px; /* même marge que Propos pour qu'ils soient tous alignés */
+  }
 }
 
-
-    /*----- Écran max 575px -----*/
+/*----- Écran max 575px -----*/
 
 @media (max-width: 575px) {
+  .nav_menu {
+    flex-direction: column-reverse; /* inversion inscription avec hébergement et activités */
+    align-items: flex-end; /* placés à droite */
+    width: 100%;
+  }
 
-    .nav_menu {
-        flex-direction: column-reverse;     /* inversion inscription avec hébergement et activités */
-        align-items: flex-end;              /* placés à droite */
-        width: 100%;
-    }    
+  .header {
+    align-items: stretch; /* remonter le logo en haut à gauche */
+  }
 
-    .header {
-        align-items: stretch;              /* remonter le logo en haut à gauche */
-    }
+  .logo {
+    position: absolute; /* pour pouvoir ensuite contrôler la largeur des 2 div children */
+  }
 
-    .logo {
-        position: absolute;                 /* pour pouvoir ensuite contrôler la largeur des 2 div children */
-   }
+  .header nav {
+    width: 100%; /* étendre la largeur de Hébergement et activité sur tout l'écran */
+  }
 
-   .header nav {                           
-        width: 100%;                        /* étendre la largeur de Hébergement et activité sur tout l'écran */
-    }
+  .header nav ul {
+    padding-left: 0; /* enlever le padding à gauche */
+  }
 
-    .header nav ul{                        
-        padding-left: 0;                    /* enlever le padding à gauche */
-    }    
+  .nav_menu li {
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 17px; /* bordure grise et alignement Hébergement et Activités */
+    width: 50%;
+    text-align: center;
+  }
 
-    .nav_menu li {
-        border-bottom: 2px solid #F2F2F2;
-        padding-bottom: 17px;               /* bordure grise et alignement Hébergement et Activités */
-        width: 50%;
-        text-align: center;
-    }
+  .nav_menu li:hover {
+    border-bottom-color: #0065fc; /* bordure bleue basse lorsqu'on clique */
+  }
 
-    .nav_menu li:hover {
-        border-bottom-color: #0065fc;     /* bordure bleue basse lorsqu'on clique */
-    }
+  .nav:hover {
+    border-top: none; /* enlever bordure bleue haute lorsqu'on clique */
+  }
 
-    .nav:hover {
-        border-top: none;                   /* enlever bordure bleue haute lorsqu'on clique */
-    }
+  .hebergement img {
+    width: 90vw; /* image occupera toujours 90% de section hébergement */
+    height: 140px;
+  }
 
-    .hebergement img {
-        width: 90vw;                        /* image occupera toujours 90% de section hébergement */                  
-        height: 140px;
-    }
+  #section_hebergement {
+    border: 1px solid white;
+    background-color: white; /* bordure et fond blanc */
+  }
 
-    #section_hebergement {
-        border: 1px solid white;
-        background-color: white;          /* bordure et fond blanc */
-    }
+  .descriptif_hebergement {
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 0 15px #f2f2f2; /* shadow grise tout autour */
+  }
 
-    .descriptif_hebergement {
-        border: 1px solid #F2F2F2;
-        box-shadow: 0 0 15px #F2F2F2;    /* shadow grise tout autour */   
-    }
+  .populaire .titre_image {
+    margin-top: 5px;
+  }
 
-    .populaire .titre_image {
-        margin-top: 5px;
-    }
+  #research {
+    display: none; /* Faire disparaître le bouton rechercher */
+  }
 
-    #research {
-        display: none;                          /* Faire disparaître le bouton rechercher */                     
-    }
+  #loupe {
+    display: block; /* Faire apparaître le bouton loupe */
+  }
 
-    #loupe {
-        display: block;                         /* Faire apparaître le bouton loupe */
-    }
+  #ville {
+    border-color: transparent;
+  }
 
-    #ville {
-        border-color: transparent;
-    }
-
-    #form {
-        border: 1px solid #F2F2F2;              
-        border-right: transparent;
-        border-radius: 0 10px 10px 0;
-    }
+  #form {
+    border: 1px solid #f2f2f2;
+    border-right: transparent;
+    border-radius: 0 10px 10px 0;
+  }
 }
