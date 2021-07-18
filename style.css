@@ -284,10 +284,6 @@ aside {
 
 /*--------------------------- Activités -------------------------------*/
 
-.section_activites {
-  margin-top: 40px;
-}
-
 .activites {
   display: flex;
   justify-content: space-between;
