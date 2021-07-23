@@ -576,3 +576,18 @@ footer a:hover {
     border-radius: 0 10px 10px 0;
   }
 }
+
+
+/*----- Écran max 375px -----*/
+
+@media (max-width: 375px) {
+  #form {
+    width: 90%;
+    justify-content: space-between;
+  }
+  
+  .rechercher {
+    margin-right: 10px;
+    margin-left: 10px;
+  }  
+}
